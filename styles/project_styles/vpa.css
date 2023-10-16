@@ -51,9 +51,8 @@
     letter-spacing: -.05rem;
 } 
 .project-image {
-    max-width: 100%; /* Make images responsive and fit the container */
-    max-height: 300px; /* Set a maximum height for the images (adjust as needed) */
-    width: auto; /* Allow the width to adjust according to the max-width */
+    width: 300px; /* Set the desired width for the images */
+    height: 200px; /* Set the desired height for the images */
     display: block; /* Remove any extra white space around the images */
     margin: 0 auto; /* Center-align the images within the container */
 }
