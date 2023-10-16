@@ -50,4 +50,9 @@
     font-size: 1.8rem; 
     letter-spacing: -.05rem;
 } 
-
+.project-image {
+    max-width: 100%; /* Make images responsive and fit the container */
+    height: auto; /* Maintain the original aspect ratio of the images */
+    display: block; /* Remove any extra white space around the images */
+    margin: 0 auto; /* Center-align the images within the container */
+}
