@@ -50,7 +50,7 @@
     font-size: 1.8rem; 
     letter-spacing: -.05rem;
 } 
-.photo-gallery {
+.project-image {
     width: 300px; /* Set the desired width for the images */
     height: 200px; /* Set the desired height for the images */
     display: block; /* Remove any extra white space around the images */
