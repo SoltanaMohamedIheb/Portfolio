@@ -1,6 +1,6 @@
 @font-face
 {
-    font-family: mirage_font;
+    font-family: Major Mono Display;
     src: url("./../fonts/blueberry.otf");
 }
 
@@ -8,7 +8,7 @@
 {
     color: rgba(255, 255, 255, 255);
     -webkit-text-stroke: 2px rgb(130, 74, 250);
-    font-family: 'mirage_font', 'monospace';
+    font-family: 'Major Mono Display', 'monospace';
     font-size: 5.8rem; 
     letter-spacing: +0.7rem;
     text-align: center;
