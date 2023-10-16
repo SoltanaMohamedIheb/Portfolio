@@ -52,7 +52,9 @@
 } 
 .project-image {
     max-width: 100%; /* Make images responsive and fit the container */
-    height: auto; /* Maintain the original aspect ratio of the images */
+    max-height: 300px; /* Set a maximum height for the images (adjust as needed) */
+    width: auto; /* Allow the width to adjust according to the max-width */
     display: block; /* Remove any extra white space around the images */
     margin: 0 auto; /* Center-align the images within the container */
 }
+
