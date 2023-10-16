@@ -50,7 +50,7 @@
     font-size: 1.8rem; 
     letter-spacing: -.05rem;
 } 
-body {
+/* body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -68,5 +68,5 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-}
+} */
 
