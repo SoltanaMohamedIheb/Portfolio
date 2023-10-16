@@ -1,8 +1,4 @@
-@font-face
-{
-    font-family: Major Mono Display;
-    src: url("./../fonts/blueberry.otf");
-}
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 
 #mirage_title
 {
