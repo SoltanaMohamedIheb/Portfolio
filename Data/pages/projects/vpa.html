@@ -71,13 +71,13 @@
 </div>
 
 <!-- First set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColorWithDelay('#f4f4f4', this, 500)">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff')" onmouseout="changeBackgroundColor('#f4f4f4')">
     <img src="Data/images/1653832240507.jpg" alt="First 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx2bvt1uIZ8" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Second set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColorWithDelay('#f4f4f4', this, 500)">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff')" onmouseout="changeBackgroundColor('#f4f4f4')">
     <img src="Data/images/space2.png" alt="Second 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ongAxEeAtLA" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -85,16 +85,8 @@
 <!-- Add more sets of images and videos as needed -->
 
 <script>
-    function changeBackgroundColor(color, element) {
+    function changeBackgroundColor(color) {
         document.body.style.backgroundColor = color;
-        element.style.backgroundColor = color;
-    }
-
-    function changeBackgroundColorWithDelay(color, element, delay) {
-        setTimeout(function () {
-            document.body.style.backgroundColor = color;
-            element.style.backgroundColor = color;
-        }, delay);
     }
 </script>
 
