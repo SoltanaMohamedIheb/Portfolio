@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/project_styles/vpa.css"/>
-    <title> Design </title>
+    <title>  Designs </title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
             padding: 0;
             background-color: #f4f4f4;
+            transition: background-color 0.5s ease-in-out;
         }
 
         hr {
@@ -33,10 +34,11 @@
 
         .project-section {
             margin-bottom: 30px;
-            background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: background-color 0.5s ease-in-out;
         }
 
         .project-section img {
@@ -69,18 +71,25 @@
 </div>
 
 <!-- First set of image and YouTube video -->
-<div class="project-section">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColor('#fff', this)">
     <img src="Data/images/1653832240507.jpg" alt="First 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx2bvt1uIZ8" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Second set of image and YouTube video -->
-<div class="project-section">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColor('#fff', this)">
     <img src="Data/images/space2.png" alt="Second 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ongAxEeAtLA" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Add more sets of images and videos as needed -->
+
+<script>
+    function changeBackgroundColor(color, element) {
+        document.body.style.backgroundColor = color;
+        element.style.backgroundColor = color;
+    }
+</script>
 
 </body>
 </html>
