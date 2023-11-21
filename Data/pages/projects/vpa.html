@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/project_styles/vpa.css"/>
-    <title>  Designs </title>
+    <title> Designs </title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -71,13 +71,13 @@
 </div>
 
 <!-- First set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColor('#fff', this)">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColorWithDelay('#fff', this, 500)">
     <img src="Data/images/1653832240507.jpg" alt="First 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx2bvt1uIZ8" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Second set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColor('#fff', this)">
+<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff', this)" onmouseout="changeBackgroundColorWithDelay('#fff', this, 500)">
     <img src="Data/images/space2.png" alt="Second 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ongAxEeAtLA" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -88,6 +88,13 @@
     function changeBackgroundColor(color, element) {
         document.body.style.backgroundColor = color;
         element.style.backgroundColor = color;
+    }
+
+    function changeBackgroundColorWithDelay(color, element, delay) {
+        setTimeout(function () {
+            document.body.style.backgroundColor = color;
+            element.style.backgroundColor = color;
+        }, delay);
     }
 </script>
 
