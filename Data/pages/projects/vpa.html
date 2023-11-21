@@ -37,7 +37,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
+            background-color: #1d2e1f;
             transition: background-color 0.5s ease-in-out;
         }
 
@@ -57,6 +57,11 @@
             height: 315px;
             border-radius: 5px;
         }
+
+        .project-section:hover {
+            background-color: #1d2e1f;
+            transition: background-color 0.5s ease-out;
+        }
     </style>
 </head>
 <body>
@@ -71,24 +76,18 @@
 </div>
 
 <!-- First set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff')" onmouseout="changeBackgroundColor('#1d2e1f')">
+<div class="project-section">
     <img src="Data/images/1653832240507.jpg" alt="First 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cx2bvt1uIZ8" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Second set of image and YouTube video -->
-<div class="project-section" onmouseover="changeBackgroundColor('#e6f7ff')" onmouseout="changeBackgroundColor('#1d2e1f')">
+<div class="project-section">
     <img src="Data/images/space2.png" alt="Second 3D Design">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ongAxEeAtLA" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <!-- Add more sets of images and videos as needed -->
-
-<script>
-    function changeBackgroundColor(color) {
-        document.body.style.backgroundColor = color;
-    }
-</script>
 
 </body>
 </html>
