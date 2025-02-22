@@ -1,80 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    
-    <!-- Mobile Specific Metas -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="keywords" content="programmer, coding, console, cv, java, haskell, OpenGL, c, c++, games developer, software developer, english, french, arabic" />
-    <meta name="description" content="Games and software developer interested in c++/c# gameplay development." />
+    <head>
+        <!-- Matrix Background Styles -->
+        <style>
+            body {
+                margin: 0;
+                overflow-x: hidden;
+                position: relative;
+                background: transparent;
+            }
 
-    <title>Iheb Soltana</title>
+            #matrixCanvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background: #0a0a12;
+            }
 
-    <!-- External file links for this html page  -->
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
-    <link rel="stylesheet" type="text/css" href="styles/landing.css">
-    <link rel="stylesheet" type="text/css" href="styles/career.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            /* Ensure content stays on top */
+            .container {
+                position: relative;
+                z-index: 1;
+                background: transparent;
+            }
 
-    <!-- Project related css files --> 
-    <link rel="stylesheet" type="text/css" href="./styles/project_styles/mirage.css"/>
-    <link rel="stylesheet" type="text/css" href="./styles/project_styles/exalted.css"/>
-    <link rel="stylesheet" type="text/css" href="./styles/project_styles/15_puzzle.css"/>
-    <link rel="stylesheet" type="text/css" href="./styles/project_styles/game_tech.css"/>
-    <link rel="stylesheet" type="text/css" href="./styles/project_styles/vpa.css"/>
+            /* Improve text readability */
+            #title, #about_me, .buttons, .kd-button {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            }
+        </style>
 
-    <!-- Icon -->
-    <link rel="icon" type="image/png" href="./data/images/icon_trans.png">
+        <!-- Original Metadata -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="programmer, coding, console, cv, java, haskell, OpenGL, c, c++, games developer, software developer, english, french, arabic" />
+        <meta name="description" content="Games and software developer interested in c++/c# gameplay development." />
+        <title>Iheb Soltana</title>
 
-    <!-- Scripts -->
-    <script src="scripts/quick_links.js"></script>
+        <!-- Original CSS Links -->
+        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="styles/landing.css">
+        <link rel="stylesheet" type="text/css" href="styles/career.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Project CSS Links -->
+        <link rel="stylesheet" type="text/css" href="./styles/project_styles/mirage.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/project_styles/exalted.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/project_styles/15_puzzle.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/project_styles/game_tech.css"/>
+        <link rel="stylesheet" type="text/css" href="./styles/project_styles/vpa.css"/>
 
-    <!-- Add google analytics data -->
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="./data/images/icon_trans.png">
+    </head>
 
-</head>
+    <body id="top">
+        <!-- Matrix Canvas -->
+        <canvas id="matrixCanvas"></canvas>
 
-<!-- Add a custom container class implementation here.... -->
-<body id="top">  
-    <div class="container" style="margin-top: 1%" align="center">   
-        <div id="title">Iheb Soltana</div>            
-        <img class="landing_logo" src="Data/images/portrait (1).png" alt="portrait">
-        <div id="quick_links">
-            <!-- <p id ="tooltip">Quick Links</p> -->
-            <!-- <a href="./Data/cv/CV_SoltanaMohamedIheb.pdf" target="_blank"><i class="fa fa-file-text"></i></a> -->
-            <a href="mailto:mohamediheb.soltana@esprit.tn" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://github.com/SoltanaMohamedIheb" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohamed-iheb-soltana-14467923b/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/channel/UCFhH37mgUYRja9eUc6VmrGg" target="_blank"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.instagram.com/iheb_soltana/" target="_blank"><i class="fa fa-instagram"></i></a>
-        </div>
-        <hr>
-        <div id="about_me">Hi there and thanks for stopping by! My name is Iheb, i'm a passionate programmer who feels enjoyment and fulfillment from the journey of creating gaming experiences.</div>
-        <hr>
-
-        <section class="buttons">
-            <div class="button_container">
-                <div id="projects-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Projects</div> 
-                <div id="career-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Career</div> 
-                <div id="skills-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Skills</div> 
-                <a id="research-Button" class="btn btn-5 kd-button" download="CV_SoltanaMohamedIheb.pdf" href="./Data/cv/CV_SoltanaMohamedIheb.pdf">Download CV</a>
+        <!-- Original Content -->
+        <div class="container" style="margin-top: 1%" align="center">   
+            <div id="title">Iheb Soltana</div>            
+            <img class="landing_logo" src="./data/images/portrait.png" alt="Portrait">
+            <div id="quick_links">
+                <a href="mailto:mohamediheb.soltana@esprit.tn" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/SoltanaMohamedIheb" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-iheb-soltana-14467923b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCFhH37mgUYRja9eUc6VmrGg" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/iheb_soltana/" target="_blank"><i class="fa fa-instagram"></i></a>
             </div>
-        </section>
+            <hr>
+            <div id="about_me">Hi there and thanks for stopping by! My name is Iheb, i'm a passionate programmer who feels enjoyment and fulfillment from the journey of creating gaming experiences.</div>
+            <hr>
+
+            <section class="buttons">
+                <div class="button_container">
+                    <div id="projects-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Projects</div> 
+                    <div id="career-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Career</div> 
+                    <div id="skills-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Skills</div> 
+                    <div id="research-Button" class="btn btn-5 kd-button" onClick="document.getElementById('project_data_area').style.opacity = 0;">Research</div> 
+                </div>
+            </section>
+        </div>
+
+        <!-- Matrix Animation Script -->
+        <script>
+            (function() {
+                const canvas = document.getElementById('matrixCanvas');
+                const ctx = canvas.getContext('2d');
+                
+                function resizeCanvas() {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                }
+                
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+
+                const chars = '▲■✖●'.repeat(7) + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+                const drops = Array(Math.floor(canvas.width/20)).fill(0);
+                const symbolColors = {
+                    '▲': '#ff00ff', // Pink
+                    '■': '#ff0000', // Red
+                    '✖': '#00ff00', // Green
+                    '●': '#00a1ff'  // Blue
+                };
+
+                function drawMatrix() {
+                    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    
+                    ctx.font = '20px monospace';
+
+                    drops.forEach((drop, i) => {
+                        const text = chars[Math.floor(Math.random() * chars.length)];
+                        ctx.fillStyle = symbolColors[text] || 'rgba(0, 51, 255, 0.6)';
+                        ctx.fillText(text, i*20, drop*20);
+                        
+                        if(drop*20 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                        drops[i]++;
+                    });
+                }
+
+                // Start animation
+                const matrixInterval = setInterval(drawMatrix, 50);
+
+                // Optional: Pause when tab is hidden
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) {
+                        clearInterval(matrixInterval);
+                    } else {
+                        matrixInterval = setInterval(drawMatrix, 50);
+                    }
+                });
+            })();
+        </script>
+
+        <!-- Original Scripts -->
+        <script src="scripts/text_animation.js"></script>
+        <script src="scripts/quick_links.js"></script>
+    </body>
+
+    <div id="bottom">
+        <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;"></div>
+        <div id="project_data_area" class="container kd-selection-content" style="opacity: 0;"></div>
+        <script src="scripts/button_nav_selection.js"></script>
+        <script src="scripts/button_nav_proj.js"></script>
+        <script src="scripts/button_nav_career.js"></script>
     </div>
-
-    <!-- Scripts used in top body -->
-    <script src="scripts/text_animation.js"></script>
-</body>
-
-<div id="bottom">
-    <!-- Data_Labels -->
-    <div id="data_selection_area" class="container kd-selection-content" style="opacity: 0;"></div>
-    <div id="project_data_area" class="container kd-selection-content" style="opacity: 0;"></div>
-    <script src="scripts/button_nav_selection.js"></script>
-    <script src="scripts/button_nav_proj.js"></script>
-    <script src="scripts/button_nav_career.js"></script>
-
-</div>
 </html>
