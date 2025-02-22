@@ -96,13 +96,13 @@
                 window.addEventListener('resize', resizeCanvas);
                 resizeCanvas();
 
-                const chars = '▲■✖●'.repeat(7) + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+                const chars = '▲■✖o'.repeat(7) + 'aBcdEfgHIjklmnpqrstuvwyz0123456789@#$%^&*()';
                 const drops = Array(Math.floor(canvas.width/20)).fill(0);
                 const symbolColors = {
                     '▲': '#ff00ff', // Pink
                     '■': '#ff0000', // Red
                     '✖': '#00ff00', // Green
-                    '●': '#00a1ff'  // Blue
+                    'o': '#00a1ff'  // Blue
                 };
 
                 function drawMatrix() {
